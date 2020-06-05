@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -40,11 +41,14 @@ ul li {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(95, 145, 201);
+
 }
 
 a:hover {
-    text-decoration: underline;
+
+    color: cornsilk;
+    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.57);
 }
 
 main {
@@ -88,10 +92,26 @@ section {
 
 h2 {
     font-size: 5rem;
-    color: white;
+    color: cornsilk;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.57);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    padding-right: 10px;
+    color: rgb(95, 145, 201);
+    background-color: rgba(0, 0, 0, 0.59);
+    text-align: right;
+    line-height: 50px;
+
+
+
 }
