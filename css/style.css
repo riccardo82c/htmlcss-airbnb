@@ -2,10 +2,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 header {
-
     text-align: left;
     position: fixed;
     width: 100%;
@@ -14,8 +14,6 @@ header {
     background-color: rgba(0, 0, 0, 0.59);
     z-index: 3;
     line-height: 50px;
-
-
 }
 
 #logo {
@@ -29,13 +27,11 @@ header {
     height: 50px;
 }
 
-#logo, nav  {
+#logo, nav {
     display: inline-block;
 }
 
-
-
-ul li{
+ul li {
     display: inline-block;
     padding: 0 10px;
     line-height: 0 50px;
@@ -51,9 +47,11 @@ a:hover {
     text-decoration: underline;
 }
 
+main {
+     overflow-x: hidden;
+}
 
-
-section{
+section {
     width: 100vw;
     height: 100vh;
     position: relative;
@@ -61,29 +59,23 @@ section{
 }
 
 .city {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-size: cover;
     background-position: center;
-
 }
 
 .city1 {
     background-image: url("https://www.clinkhostels.com/wp-content/uploads/2015/03/london22.jpg");
-
 }
 
 .city2 {
     background-image: url("https://www.thebalance.com/thmb/ydJ2zwlhtK-8tTONse95-gO30II=/3865x2576/filters:fill(auto,1)/aerial-of-new-york-city-and-brooklyn-bridge-at-dusk-611562130-5a590307d92b09003657be20.jpg");
-
 }
 
 .city3 {
     background-image: url("https://www.viaggi-lowcost.info/wp-content/uploads/2013/07/Barcellona-Spagna.jpg");
-
 }
-
-
 
 .layover {
     position: absolute;
@@ -100,7 +92,6 @@ h2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     z-index: 2;
-
 }
