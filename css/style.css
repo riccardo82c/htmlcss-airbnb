@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
 header {
@@ -17,17 +16,6 @@ header {
     line-height: 50px;
 }
 
-
-
-.icona {
-    vertical-align: middle;
-    width: 50px;
-    height: 50px;
-
-}
-
-
-
 nav {
     display: inline-block;
 }
@@ -39,27 +27,41 @@ ul li {
     text-transform: uppercase;
 }
 
+.icona {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+}
+
 a {
     text-decoration: none;
     color: rgb(95, 145, 201);
-
 }
 
 a:hover {
-
     color: cornsilk;
     text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.57);
 }
 
 main {
-     overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 section {
     width: 100vw;
     height: 100vh;
     position: relative;
+}
 
+h2 {
+    font-size: 5rem;
+    color: cornsilk;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.57);
 }
 
 .city {
@@ -85,21 +87,12 @@ section {
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.42);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-h2 {
-    font-size: 5rem;
-    color: cornsilk;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 2;
-    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.57);
-}
+
 
 footer {
     position: fixed;
@@ -111,7 +104,4 @@ footer {
     background-color: rgba(0, 0, 0, 0.59);
     text-align: right;
     line-height: 50px;
-
-
-
 }
