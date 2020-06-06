@@ -8,14 +8,13 @@
 /****************************
 header
 *****************************/
-
 header {
     text-align: left;
     position: fixed;
     width: 100%;
     height: 50px;
     font-size: 2rem;
-    background-color: rgba(0, 0, 0, 0.59);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 3;
     line-height: 50px;
 }
@@ -44,41 +43,71 @@ a {
 
 a:hover {
     color: cornsilk;
-    text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.57);
+    /* some cool neon shadow effect :) */
+    text-shadow: 0 0 5px #181818,
+        0 0 10px #181818,
+        0 0 15px #181818,
+        0 0 20px #187bff,
+        0 0 25px #187bff,
+        0 0 30px #187bff,
+        0 0 35px #187bff,
+        0 0 40px #187bff;
 }
 
 /****************************
 main
 *****************************/
-
 section {
     width: 100%;
     height: 100vh;
     position: relative;
     background-size: cover;
     background-position: center;
+    border-left: 30px solid #181818;
+    border-right: 30px solid #181818;
+    border-top: 15px solid #181818;
+    border-bottom: 15px solid #181818;
 }
 
-h2 {
-    font-size: 5rem;
-    color: cornsilk;
+.titolo {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    z-index: 2;
-    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.57);
+    text-align: center;
 }
 
-#numero1 {
+h2, h3 {
+
+    color: cornsilk;
+    /* again other cool neon shadow effect :) */
+    text-shadow: 0 0 5px #181818,
+        0 0 10px #181818,
+        0 0 15px #181818,
+        0 0 20px #187bff,
+        0 0 25px #187bff,
+        0 0 30px #187bff,
+        0 0 35px #187bff,
+        0 0 40px #187bff;
+}
+
+h2 {
+    font-size: 5rem;
+}
+
+h3 {
+    font-size: 2.5rem;
+}
+
+#city1 {
     background-image: url("https://www.clinkhostels.com/wp-content/uploads/2015/03/london22.jpg");
 }
 
-#numero2 {
+#city2 {
     background-image: url("https://www.thebalance.com/thmb/ydJ2zwlhtK-8tTONse95-gO30II=/3865x2576/filters:fill(auto,1)/aerial-of-new-york-city-and-brooklyn-bridge-at-dusk-611562130-5a590307d92b09003657be20.jpg");
 }
 
-#numero3 {
+#city3 {
     background-image: url("https://www.viaggi-lowcost.info/wp-content/uploads/2013/07/Barcellona-Spagna.jpg");
 }
 
@@ -88,14 +117,12 @@ h2 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.5);
 }
-
 
 /****************************
 footer
 *****************************/
-
 footer {
     position: fixed;
     bottom: 0;
@@ -103,7 +130,8 @@ footer {
     width: 100%;
     padding-right: 10px;
     color: rgb(95, 145, 201);
-    background-color: rgba(0, 0, 0, 0.59);
+    background-color: rgba(0, 0, 0, 0.8);
     text-align: right;
     line-height: 50px;
+    z-index: 3;
 }
