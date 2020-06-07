@@ -44,6 +44,7 @@ a {
 
 a:hover {
     color: cornsilk;
+    border-bottom: 3px solid cornsilk;
     /* some cool neon shadow effect :) */
     text-shadow: 0 0 5px #181818,
         0 0 10px #181818,
