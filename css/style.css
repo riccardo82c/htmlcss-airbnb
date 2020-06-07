@@ -27,7 +27,8 @@ ul li {
     display: inline-block;
     padding: 0 10px;
     line-height: 50px;
-    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+
 }
 
 .icona {
@@ -63,10 +64,10 @@ section {
     position: relative;
     background-size: cover;
     background-position: center;
-    border-left: 30px solid #181818;
+    /* border-left: 30px solid #181818;
     border-right: 30px solid #181818;
     border-top: 15px solid #181818;
-    border-bottom: 15px solid #181818;
+    border-bottom: 15px solid #181818; */
 }
 
 .titolo {
@@ -74,11 +75,9 @@ section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 3.5rem;
+    letter-spacing: 0.4rem;
     text-align: center;
-}
-
-h2, h3 {
-
     color: cornsilk;
     /* again other cool neon shadow effect :) */
     text-shadow: 0 0 5px #181818,
@@ -91,12 +90,25 @@ h2, h3 {
         0 0 40px #187bff;
 }
 
-h2 {
-    font-size: 5rem;
+.sottotitolo {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -80%);
+    opacity: 0;
+    transition: all 1s;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    letter-spacing: 0.2rem;
+    color: rgba(244, 252, 116, 0.36);
+    text-shadow: .1rem .1rem .2rem rgba(0, 0, 0, 0.7);
 }
 
-h3 {
-    font-size: 2.5rem;
+section:hover .sottotitolo {
+    transform: translate(-50%, -50%);
+    color: cornsilk;
+    opacity: 1
 }
 
 #city1 {
